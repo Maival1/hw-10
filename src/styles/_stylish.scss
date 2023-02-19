@@ -1,0 +1,58 @@
+.stylish {
+  height: 50vh;
+  background: url(./img/stylish.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  &__title {
+    color: #CCCCCC;
+  }
+  &__title::after {
+    background: #CCCCCC;
+  }
+  &__subtile {
+    color: #CCCCCC;
+    margin-bottom: 73px;
+  }
+  &__link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #FFFFFF;
+    background: rgba(0, 0, 0, 0);
+    width: 23.125rem;
+  }
+  &__link:hover {
+    background: #AB4949;
+  }
+  &__link:active {
+    border: 1px solid #AB4949;
+    background-color: #EC7979;
+  }
+}
+
+@media (max-width: 720px) {
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .stylish__subtile {
+    margin-bottom: 37px;
+  }
+
+  .stylish__link {
+    width: 17.125rem;
+  }
+}

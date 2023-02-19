@@ -1,0 +1,29 @@
+.awesome {
+  margin-bottom: 58px;
+  &__row {
+    display: flex;
+    gap: 1.875rem;
+  }
+  &__col {
+    text-align: center;
+    margin-top: 63px;
+  }
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+  }
+}
+
+@media (max-width: 720px) {
+  .awesome__row {
+    flex-direction: column;
+  }
+}

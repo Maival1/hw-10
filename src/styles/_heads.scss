@@ -1,0 +1,41 @@
+.heads {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  padding-top: 50px;
+  font-weight: 400;
+  font-size: 36px;
+  padding-bottom: 80px;
+  position: relative;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 42%;
+    bottom: 40px;
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
+  }
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  color: #86878B;
+}
+
+
+@media (max-width: 720px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}

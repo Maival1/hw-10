@@ -1,0 +1,96 @@
+.form {
+  margin-top: 231px;
+  width: 470px;
+  height: 450px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  &__title {
+    padding: 1.95rem;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    color: #EC7979;
+    margin-bottom: 45px;
+  }
+  &__title::before {
+    content: 'TRY YOUR';
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+  }
+  &__title::after {
+    content: 'TRIAL TODAY';
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+  }
+  &__item {
+    margin: 0 3.125rem;
+    display: flex;
+    padding: 0.588rem;
+    width: 23.125rem;
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 2.0625rem;
+  }
+  &__btn {
+    margin-top: 3.6875rem;
+    padding: 1.2289rem;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+  }
+  &__btn:hover {
+    background: #AB4949;
+  }
+  &__btn:active {
+    border: 1px solid #AB4949;
+    background-color: #EC7979;
+  }
+}
+
+@media (max-width:1024px) {
+  .form {
+    width: 361px;
+  }
+
+  .form__item {
+    width: 17.125rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .form {
+    width: 228px;
+    height: 381px;
+    margin: 56px auto 50px auto;
+  }
+
+  .form__item {
+    width: 12.125rem;
+  }
+
+  .form__title {
+    padding: 1.5rem 0.4rem;
+  }
+
+  .form__item {
+    margin: 2rem 0.8rem;
+  }
+
+  .form__btn {
+    margin-top: 0.6875rem;
+  }
+
+  .form__title {
+    font-size: 14px;
+  }
+
+  .form__title::after {
+    font-size: 14px;
+  }
+
+  .form__title::before {
+    font-size: 14px;
+  }
+}

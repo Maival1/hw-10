@@ -1,0 +1,25 @@
+.social {
+  background: #F8EFEF;
+  &__row {
+    display: flex;
+  }
+  &__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 18px;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    color: #86878B;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 720px) {
+  .social__info {
+    text-align: center;
+  }
+}
